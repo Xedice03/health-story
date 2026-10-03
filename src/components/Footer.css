@@ -1,0 +1,85 @@
+.footer {
+  background-color:rgba(98, 164, 3, 1);
+  padding: 40px 0;
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color:rgba(245, 245, 245, 1);
+}
+
+.footer p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color:rgba(245, 245, 245, 1);
+
+}
+
+.footer h3 {
+  color:rgba(5, 66, 44, 1);
+  font-size: 27px;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 9px;
+}
+
+.footer li a {
+  color:rgba(245, 245, 245, 1);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer li a:hover {
+  text-decoration: underline;
+}
+
+.app-btn {
+  border: none;
+  margin-bottom: 8px;
+border-radius:6px;
+
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.paypal{
+border:none;
+border-radius:6px;
+
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer h5 {
+    margin-top: 20px;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+  }
+
+  .paypal {
+    margin-top: 15px;
+  }
+}

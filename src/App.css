@@ -1,0 +1,540 @@
+
+.hero {
+  min-height: 540px;
+  background-image: url("./assets/matthew-smith-Rfflri94rs8-unsplash\ 1\ \(1\).png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  color: white;
+  max-width: 570px;
+  margin-top: 50px;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-content > p {
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   HERO INFO
+========================= */
+
+.hero-info {
+  margin-bottom: 15px;
+}
+
+.hero-info div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 9px;
+}
+
+.hero-info span {
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  color: #5baa00;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+}
+
+.hero-info p {
+  margin: 0;
+  font-size: 11px;
+}
+
+/* =========================
+   SHOP BUTTON
+========================= */
+
+.shop-btn {
+  border: none;
+  background-color: #5baa00;
+  color: white;
+
+  padding: 9px 20px;
+
+  border-radius: 20px;
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.shop-btn:hover {
+  background-color: #478d00;
+}
+
+
+@media (max-width: 768px) {
+
+ 
+
+  .hero {
+    min-height: 560px;
+    background-position: center;
+  }
+
+  .hero-overlay {
+    min-height: 560px;
+    align-items: flex-end;
+    padding-bottom: 25px;
+  }
+
+  .hero-content {
+    background-color: rgba(255, 255, 255, 0.94);
+    color: #222;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .hero-content h1 {
+    font-size: 23px;
+    line-height: 1.25;
+  }
+
+  .hero-content > p {
+    font-size: 11px;
+  }
+
+  .hero-info p {
+    font-size: 10px;
+  }
+
+  .shop-btn {
+    font-size: 11px;
+  }
+}
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 48px 0;
+  overflow-x: auto;
+}
+
+.category {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.category-circle {
+  width: 122px;
+  height: 122px;
+  margin: 0 auto 16px;
+  padding: 12px;
+  border-radius: 50%;
+  background: #fdeee5;
+}
+
+.category-circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.category-name {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.category-count {
+  margin: 0;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+@media (max-width: 768px) {
+  .categories {
+    padding: 32px 0;
+  }
+
+  .category-circle {
+    width: 96px;
+    height: 96px;
+  }
+
+  .category-name {
+    font-size: 14px;
+  }
+
+  .category-count {
+    font-size: 12px;
+  }
+}
+/* =========================
+   ONLY THIS WEEK
+========================= */
+
+.promo-card {
+  position: relative;
+  min-height: 206px;
+  padding: 28px 26px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.promo-green {
+  background: #eef8ee;
+}
+
+.promo-yellow {
+  background: #fbf8e8;
+}
+
+.promo-pink {
+  background: #fbeeee;
+}
+
+.promo-text {
+  position: relative;
+  z-index: 1;
+  max-width: 55%;
+}
+
+.promo-label {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #198754;
+}
+
+.promo-title {
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #111;
+}
+
+.promo-desc {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.promo-price {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111;
+}
+
+.promo-price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+/* sekil: rengli kvadratin sag terefinde ayrica durur */
+.promo-img {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 190px;
+  height: 190px;
+  transform: translateY(-50%);
+  object-fit: contain;
+}
+
+/* 3-cu kart: sekil sag terefi tam doldurur */
+.promo-img-full {
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  transform: none;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .promo-title {
+    font-size: 24px;
+  }
+
+  .promo-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* ================= SALE TABS ================= */
+
+.sale-tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.sale-tabs span {
+  cursor: pointer;
+  color: #999;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+
+.sale-tabs span.active {
+  background: #f1f1f1;
+  color: #000;
+  font-weight: 500;
+}
+
+
+/* ================= PRODUCT CARD ================= */
+
+.product-card {
+  height: 100%;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f5f5f5;
+  margin-bottom: 12px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  background: #ff4d4f;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.heart-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.rating {
+  color: #f5b301;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.rating i {
+  margin-right: 2px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 15px;
+}
+
+.new-price {
+  color: #ff4d4f;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product-timer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.product-timer span {
+  background: #f3f3f3;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.product-timer span:nth-child(even) {
+  background: none;
+  padding: 0;
+}
+
+.time-text {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 14px;
+}
+
+.add-cart {
+  background: #0a8f45;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  background: #087a3b;
+}
+/* Digestive Health */
+/* .menyuShop{
+  height: 700px;
+  background-color: rgba(244, 245, 238, 1);
+    background-image: url("./assets/");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+} */
+ .sh-section {
+  padding: 60px 20px;
+  font-family: "Jost", sans-serif;
+}
+
+.sh-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.sh-left {
+  max-width: 460px;
+}
+
+.sh-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #fbe4e0;
+  color: #ef4444;
+  font-size: 13px;
+}
+
+.sh-title {
+  margin: 16px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 34px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.sh-text {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.sh-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.sh-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #222;
+}
+
+.sh-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #dfe9cc;
+  color: #5a9e0f;
+}
+
+.sh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 20px;
+  background: #5a9e0f;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sh-btn:hover {
+  background: #4b860b;
+}
+
+.sh-right {
+  position: relative;
+  width: 270px;
+  height: 333px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+  .sh-inner {
+    flex-direction: column;
+  }
+}
