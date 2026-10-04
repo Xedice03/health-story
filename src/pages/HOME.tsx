@@ -23,7 +23,7 @@ const allProducts = [
     title: "Mint & Ginger Digestive Herbal Tea",
     image: product1,
     discount: 35,
-    oldPrice: 6.74,
+    oldPrice: 6.75,
     price: 5.75,
     category: "digestive-health"
   },

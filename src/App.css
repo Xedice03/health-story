@@ -12,6 +12,11 @@
   max-width: 570px;
   margin-top: 50px;
 }
+.shop-linkHero{
+color: white;
+text-decoration: none;
+}
+
 
 .hero-content h1 {
   font-size: 38px;
@@ -69,9 +74,7 @@
 }
 
 
-/* =========================
-   CATEGORIES
-========================= */
+/* CATEGORIES*/
 
 .categories {
   display: flex;
@@ -116,9 +119,7 @@
 }
 
 
-/* =========================
-   PROMO CARDS
-========================= */
+/* PROMO CARDS*/
 
 .promo-card {
   position: relative;
@@ -200,9 +201,7 @@
 }
 
 
-/* =========================
-   SALE TABS
-========================= */
+/*SALE TABS */
 
 .sale-tabs {
   display: flex;
@@ -229,9 +228,8 @@
 }
 
 
-/* =========================
-   PRODUCTS
-========================= */
+/* 
+   PRODUCTS*/
 
 .product-card {
   height: 100%;
@@ -349,9 +347,7 @@
 }
 
 
-/* =========================
-   MEDICINE SECTION
-========================= */
+/* SECTION*/
 
 .sh-section {
   padding: 60px 20px;
@@ -450,9 +446,8 @@
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* 
+   RESPONSIVE */
 
 @media (max-width: 800px) {
   .sh-inner {
