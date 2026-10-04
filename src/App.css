@@ -1,16 +1,11 @@
 
 .hero {
   min-height: 540px;
-  background-image: url("./assets/matthew-smith-Rfflri94rs8-unsplash\ 1\ \(1\).png");
+  background-image: url("./assets/matthew-smith-Rfflri94rs8-unsplash 1 (1).png");
   background-size: cover;
   background-position: center;
   position: relative;
 }
-
-
-/* =========================
-   HERO CONTENT
-========================= */
 
 .hero-content {
   color: white;
@@ -32,10 +27,6 @@
   margin-bottom: 20px;
 }
 
-/* =========================
-   HERO INFO
-========================= */
-
 .hero-info {
   margin-bottom: 15px;
 }
@@ -47,18 +38,10 @@
   margin-bottom: 9px;
 }
 
-.hero-info span {
-  width: 23px;
-  height: 23px;
-  background-color: white;
-  color: #5baa00;
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 12px;
+.hero-info img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .hero-info p {
@@ -66,67 +49,26 @@
   font-size: 11px;
 }
 
-/* =========================
-   SHOP BUTTON
-========================= */
-
 .shop-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   border: none;
   background-color: #5baa00;
   color: white;
-
   padding: 9px 20px;
-
   border-radius: 20px;
   font-size: 11px;
-
+  text-decoration: none;
   cursor: pointer;
 }
 
 .shop-btn:hover {
   background-color: #478d00;
+  color: white;
 }
 
 
-@media (max-width: 768px) {
-
- 
-
-  .hero {
-    min-height: 560px;
-    background-position: center;
-  }
-
-  .hero-overlay {
-    min-height: 560px;
-    align-items: flex-end;
-    padding-bottom: 25px;
-  }
-
-  .hero-content {
-    background-color: rgba(255, 255, 255, 0.94);
-    color: #222;
-    padding: 20px;
-    border-radius: 8px;
-  }
-
-  .hero-content h1 {
-    font-size: 23px;
-    line-height: 1.25;
-  }
-
-  .hero-content > p {
-    font-size: 11px;
-  }
-
-  .hero-info p {
-    font-size: 10px;
-  }
-
-  .shop-btn {
-    font-size: 11px;
-  }
-}
 /* =========================
    CATEGORIES
 ========================= */
@@ -173,26 +115,9 @@
   color: #9a9a9a;
 }
 
-@media (max-width: 768px) {
-  .categories {
-    padding: 32px 0;
-  }
 
-  .category-circle {
-    width: 96px;
-    height: 96px;
-  }
-
-  .category-name {
-    font-size: 14px;
-  }
-
-  .category-count {
-    font-size: 12px;
-  }
-}
 /* =========================
-   ONLY THIS WEEK
+   PROMO CARDS
 ========================= */
 
 .promo-card {
@@ -255,7 +180,6 @@
   color: #8a8a8a;
 }
 
-/* sekil: rengli kvadratin sag terefinde ayrica durur */
 .promo-img {
   position: absolute;
   top: 50%;
@@ -266,7 +190,6 @@
   object-fit: contain;
 }
 
-/* 3-cu kart: sekil sag terefi tam doldurur */
 .promo-img-full {
   top: 0;
   right: 0;
@@ -276,20 +199,14 @@
   object-fit: cover;
 }
 
-@media (max-width: 767px) {
-  .promo-title {
-    font-size: 24px;
-  }
 
-  .promo-img {
-    width: 150px;
-    height: 150px;
-  }
-}
-/* ================= SALE TABS ================= */
+/* =========================
+   SALE TABS
+========================= */
 
 .sale-tabs {
   display: flex;
+  justify-content: flex-start;
   gap: 8px;
 }
 
@@ -306,8 +223,15 @@
   font-weight: 500;
 }
 
+.shop-link {
+  color: black;
+  text-decoration: none;
+}
 
-/* ================= PRODUCT CARD ================= */
+
+/* =========================
+   PRODUCTS
+========================= */
 
 .product-card {
   height: 100%;
@@ -352,18 +276,16 @@
   border-radius: 50%;
   background: #fff;
   font-size: 18px;
-  line-height: 1;
   cursor: pointer;
 }
 
 .rating {
-  color: #f5b301;
-  font-size: 14px;
   margin-bottom: 6px;
 }
 
-.rating i {
-  margin-right: 2px;
+.rating img {
+  width: 85px;
+  height: auto;
 }
 
 .product-title {
@@ -406,11 +328,6 @@
   font-size: 14px;
 }
 
-.product-timer span:nth-child(even) {
-  background: none;
-  padding: 0;
-}
-
 .time-text {
   font-size: 12px;
   color: #999;
@@ -430,16 +347,13 @@
 .add-cart:hover {
   background: #087a3b;
 }
-/* Digestive Health */
-/* .menyuShop{
-  height: 700px;
-  background-color: rgba(244, 245, 238, 1);
-    background-image: url("./assets/");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-} */
- .sh-section {
+
+
+/* =========================
+   MEDICINE SECTION
+========================= */
+
+.sh-section {
   padding: 60px 20px;
   font-family: "Jost", sans-serif;
 }
@@ -519,22 +433,92 @@
   color: #fff;
   font-size: 13px;
   font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .sh-btn:hover {
   background: #4b860b;
+  color: #fff;
 }
 
-.sh-right {
-  position: relative;
-  width: 270px;
-  height: 333px;
-  flex-shrink: 0;
+.sh-image {
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  object-fit: contain;
 }
+
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (max-width: 800px) {
   .sh-inner {
     flex-direction: column;
+  }
+
+  .sh-image {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 560px;
+    background-position: center;
+  }
+
+  .hero-content {
+    background-color: rgba(255, 255, 255, 0.94);
+    color: #222;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .hero-content h1 {
+    font-size: 23px;
+    line-height: 1.25;
+  }
+
+  .hero-content > p {
+    font-size: 11px;
+  }
+
+  .hero-info p {
+    font-size: 10px;
+  }
+
+  .shop-btn {
+    font-size: 11px;
+  }
+
+  .categories {
+    padding: 32px 0;
+  }
+
+  .category-circle {
+    width: 96px;
+    height: 96px;
+  }
+
+  .category-name {
+    font-size: 14px;
+  }
+
+  .category-count {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-title {
+    font-size: 24px;
+  }
+
+  .promo-img {
+    width: 150px;
+    height: 150px;
   }
 }

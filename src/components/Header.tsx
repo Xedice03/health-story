@@ -15,12 +15,12 @@ function Header() {
       <div className="top-header">
         <div className="container">
           <div className="d-flex justify-content-between">
-            <ul>
-              <li>Track Order</li>
-              <li>About Us</li>
-              <li>Contact</li>
-              <li>FAQ</li>
-            </ul>
+         <ul>
+  <li><Link className="top-link" to="/">Track Order</Link></li>
+  <li><Link className="top-link" to="/about">About Us</Link></li>
+  <li><Link className="top-link" to="/blog">Contact</Link></li>
+  <li><Link className="top-link" to="/faq">FAQ</Link></li>
+</ul>
             <ul>
             <li className="d-flex gap-1 align-items-center"><FiPhoneCall size={17} /> +237 xxx xxx xxx</li>
               <li>English</li>
