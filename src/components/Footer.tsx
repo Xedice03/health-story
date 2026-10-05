@@ -2,6 +2,7 @@ import "./Footer.css";
 import playstore from "../assets/Frame 1000004112.png";
 import appstore from "../assets/Frame 1000004085.png";
 import paypal from "../assets/Frame 1000004123.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -31,10 +32,10 @@ function Footer() {
             <h5>Navigation</h5>
 
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/shop">Shop</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/faq">FAQs</a></li>
+           <li><Link to="/">Home</Link></li>
+  <li><Link to="/about">About Us</Link></li>
+  <li><Link to="/blog">Contact</Link></li>
+  <li><Link  to="/faq">FAQ</Link></li>
             </ul>
           </div>
 
@@ -43,9 +44,9 @@ function Footer() {
             <h5>Blog</h5>
 
             <ul>
-              <li><a href="/blog">Society</a></li>
-              <li><a href="/blog">Alimentation</a></li>
-              <li><a href="/blog">Miscellaneous</a></li>
+              <li><Link className="a" to="blog">Society</Link></li>
+              <li><Link className="a" to="/blog">Alimentation</Link></li>
+              <li><Link className="a" to="/blog">Miscellaneous</Link></li>
             </ul>
           </div>
 
@@ -54,11 +55,11 @@ function Footer() {
             <h5>Download App</h5>
 
             <button className="app-btn">
-             < img src={playstore} alt="playstore" /> 
+             <img src={playstore} alt="playstore" /> 
             </button>
 
             <button className="app-btn">
-             < img src={appstore} alt="appstore" /> 
+             <img src={appstore} alt="appstore" /> 
             </button>
           </div>
 

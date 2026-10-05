@@ -8,7 +8,7 @@ import { IoMdClose } from "react-icons/io";
 import "./Header.css"
 // impor "./Topbar";
 function Header() {
-  const [open,closeopen] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <header>
       {/*  Header */}
@@ -37,7 +37,7 @@ function Header() {
             {/* responsiv hamburger */}
             <div className="col-2 d-md-none">
               <button
-                onClick={() => closeopen(!open)}
+                onClick={() => setOpen(!open)}
                 className="btn text-white fs-4 p-0 border-0"
               >
               <FiAlignJustify />
@@ -45,7 +45,7 @@ function Header() {
             {open && (
                  <><div
                   className="menu-overlay"
-                  onClick={() => closeopen(false)}
+                  onClick={() => setOpen(false)}
                 ></div><div className="responsive-menu">
                     <div className="responsive-menu-header">
                       <div className="menu-logo">
@@ -55,16 +55,16 @@ function Header() {
                           <h6>Consciente</h6>
                         </div>
                       </div>
-                      <button onClick={() => closeopen(false)}>
+                      <button onClick={() => setOpen(false)}>
                         <IoMdClose />
                       </button>
                     </div>
                     <div className="menu-section">
                       <p>MAIN MENU</p>
-                      <Link to="/" onClick={() => closeopen(false)}>HOME</Link>
-                      <Link to="/shop" onClick={() => closeopen(false)}>SHOP</Link>
-                      <Link to="/about" onClick={() => closeopen(false)}>ABOUT</Link>
-                      <Link to="/faq" onClick={() => closeopen(false)}>FAQS</Link>
+                      <Link to="/" onClick={() => setOpen(false)}>HOME</Link>
+                      <Link to="/shop" onClick={() => setOpen(false)}>SHOP</Link>
+                      <Link to="/about" onClick={() => setOpen(false)}>ABOUT</Link>
+                      <Link to="/faq" onClick={() => setOpen(false)}>FAQS</Link>
                     </div>
                     <div className="menu-section">
                       <p>CATEGORIES</p>
