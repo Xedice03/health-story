@@ -11,8 +11,8 @@ function Header() {
   const [open,closeopen] = useState(false);
   return (
     <header>
-      {/*  Header1 */}
-      {/* <div className="top-header">
+      {/*  Header */}
+       <div className="top-header">
         <div className="container">
           <div className="d-flex justify-content-between">
          <ul>
@@ -28,7 +28,7 @@ function Header() {
             </ul>
           </div>
         </div>
-      </div> */}
+      </div> 
       {/* Header main */}
       <div className="main-header">
         <div className="container">
@@ -47,34 +47,27 @@ function Header() {
                   className="menu-overlay"
                   onClick={() => closeopen(false)}
                 ></div><div className="responsive-menu">
-
                     <div className="responsive-menu-header">
                       <div className="menu-logo">
                         <img src={LogoImg} alt="Logo" />
-
                         <div>
                           <h5>Sante</h5>
                           <h6>Consciente</h6>
                         </div>
                       </div>
-
                       <button onClick={() => closeopen(false)}>
                         <IoMdClose />
                       </button>
                     </div>
-
                     <div className="menu-section">
                       <p>MAIN MENU</p>
-
                       <Link to="/" onClick={() => closeopen(false)}>HOME</Link>
                       <Link to="/shop" onClick={() => closeopen(false)}>SHOP</Link>
                       <Link to="/about" onClick={() => closeopen(false)}>ABOUT</Link>
                       <Link to="/faq" onClick={() => closeopen(false)}>FAQS</Link>
                     </div>
-
                     <div className="menu-section">
                       <p>CATEGORIES</p>
-
                       <Link to="/shop">Digestive Health</Link>
                       <Link to="/shop">Immune Support</Link>
                       <Link to="/shop">Respiratory Relief</Link>
@@ -82,10 +75,8 @@ function Header() {
                       <Link to="/shop">Stress</Link>
                       <Link to="/shop">Skin Care</Link>
                     </div>
-
                     <div className="menu-section helps">
                       <p>HELPS</p>
-
                       <span><FaRegHeart /> Wishlist</span>
                       <span><LuUserRound /> My Account</span>
                       <span><FiPhoneCall /> Contact</span>
@@ -93,21 +84,18 @@ function Header() {
                   </div></>
               )}
             </div>
-
             {/* Logo */}
             <div className="col-6 col-md-2">
               <div className="logo">
                 <div className="LogoImg">
                   <Link className="top-link" to="/"> <img src={LogoImg} alt="Logo" /></Link>
                 </div>
-
                 <div className="text-white">
                   <h5>Sante</h5>
                   <h6>Consciente</h6>
                 </div>
               </div>
             </div>
-
             {/* Search */}
             <div className="col-12 col-md-6 order-3 order-md-2">
               <div className="search-box">
@@ -119,7 +107,6 @@ function Header() {
                 <button type="button"><FiSearch /></button>
               </div>
             </div>
-
             {/* Icons */}
             <div className="col-6 col-md-4 order-2 order-md-3">
               <div className="header-icons">
@@ -134,7 +121,6 @@ function Header() {
                 <button className="icon-btn"><FiShoppingCart /></button>
               </div>
             </div>
-
           </div>
         </div>
       </div>

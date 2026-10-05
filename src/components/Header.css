@@ -8,9 +8,8 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* header */
 
-/* .top-header {
+.top-header {
   background-color:rgba(134, 210, 24, 1);
   color: white;
   font-size: 12px;
@@ -25,7 +24,7 @@ body {
 .top-link {
   color: white;
   text-decoration: none;
-}*/
+}
 
 .header-icons {
   display: flex;
