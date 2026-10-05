@@ -174,9 +174,9 @@ function Home() {
                     </p>
                   </div>
                 </div>
-                <button className="shop-btn">
+                <div className="shop-btn">
                   <Link className="shop-linkHero" to="/shop" >Shop Now <FaArrowRight /></Link>
-                </button>
+                </div>
               </div>
             </div>
           </div>
@@ -408,9 +408,9 @@ function Home() {
                     Has healing powers
                   </li>
                 </ul>
-                <button className="sh-btn">
+                <div className="sh-btn">
                 <Link className="shop-linkHero" to="/shop" >Shop Now <FaArrowRight /></Link>
-                </button>
+                </div>
               </div>
                 <img
                   className="sh-image"

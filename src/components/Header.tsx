@@ -4,15 +4,15 @@ import { FiPhoneCall,FiSearch,FiAlignJustify,FiShoppingCart} from "react-icons/f
 import { FaRegHeart } from "react-icons/fa6";
 import { LuUserRound } from "react-icons/lu";
 import LogoImg from "../assets/Logo-3-with-name 1 (1).png";
-import "./Header.css";
-
+import { IoMdClose } from "react-icons/io";
+import "./Header.css"
+// impor "./Topbar";
 function Header() {
   const [open,closeopen] = useState(false);
-
   return (
     <header>
       {/*  Header1 */}
-      <div className="top-header">
+      {/* <div className="top-header">
         <div className="container">
           <div className="d-flex justify-content-between">
          <ul>
@@ -23,13 +23,12 @@ function Header() {
 </ul>
             <ul>
             <li className="d-flex gap-1 align-items-center"><FiPhoneCall size={17} /> +237 xxx xxx xxx</li>
-              <li>English</li>
+            <li>English</li>
               <li>USD </li>
             </ul>
           </div>
         </div>
-      </div>
-
+      </div> */}
       {/* Header main */}
       <div className="main-header">
         <div className="container">
@@ -41,15 +40,57 @@ function Header() {
                 onClick={() => closeopen(!open)}
                 className="btn text-white fs-4 p-0 border-0"
               >
-                <FiAlignJustify />
+              <FiAlignJustify />
               </button>
             {open && (
-                <div className="responsive-menu">
-                  <Link to="/">Home</Link>
-                  <Link to="/shop">Shop</Link>
-                  <Link to="/about">About</Link>
-                  <Link to="/faq">FAQ</Link>
-                </div>
+                 <><div
+                  className="menu-overlay"
+                  onClick={() => closeopen(false)}
+                ></div><div className="responsive-menu">
+
+                    <div className="responsive-menu-header">
+                      <div className="menu-logo">
+                        <img src={LogoImg} alt="Logo" />
+
+                        <div>
+                          <h5>Sante</h5>
+                          <h6>Consciente</h6>
+                        </div>
+                      </div>
+
+                      <button onClick={() => closeopen(false)}>
+                        <IoMdClose />
+                      </button>
+                    </div>
+
+                    <div className="menu-section">
+                      <p>MAIN MENU</p>
+
+                      <Link to="/" onClick={() => closeopen(false)}>HOME</Link>
+                      <Link to="/shop" onClick={() => closeopen(false)}>SHOP</Link>
+                      <Link to="/about" onClick={() => closeopen(false)}>ABOUT</Link>
+                      <Link to="/faq" onClick={() => closeopen(false)}>FAQS</Link>
+                    </div>
+
+                    <div className="menu-section">
+                      <p>CATEGORIES</p>
+
+                      <Link to="/shop">Digestive Health</Link>
+                      <Link to="/shop">Immune Support</Link>
+                      <Link to="/shop">Respiratory Relief</Link>
+                      <Link to="/shop">Pain & Inflammation</Link>
+                      <Link to="/shop">Stress</Link>
+                      <Link to="/shop">Skin Care</Link>
+                    </div>
+
+                    <div className="menu-section helps">
+                      <p>HELPS</p>
+
+                      <span><FaRegHeart /> Wishlist</span>
+                      <span><LuUserRound /> My Account</span>
+                      <span><FiPhoneCall /> Contact</span>
+                    </div>
+                  </div></>
               )}
             </div>
 
@@ -57,7 +98,7 @@ function Header() {
             <div className="col-6 col-md-2">
               <div className="logo">
                 <div className="LogoImg">
-                  <img src={LogoImg} alt="Logo" />
+                  <Link className="top-link" to="/"> <img src={LogoImg} alt="Logo" /></Link>
                 </div>
 
                 <div className="text-white">
@@ -97,7 +138,6 @@ function Header() {
           </div>
         </div>
       </div>
-
       {/* Navg... */}
       <nav className="navigation">
         <div className="container">
@@ -112,6 +152,5 @@ function Header() {
     </header>
   );
 }
-
 export default Header;
 

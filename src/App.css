@@ -449,22 +449,11 @@ text-decoration: none;
 /* 
    RESPONSIVE */
 
-@media (max-width: 800px) {
-  .sh-inner {
-    flex-direction: column;
-  }
-
-  .sh-image {
-    max-width: 350px;
-  }
-}
-
 @media (max-width: 768px) {
   .hero {
     min-height: 560px;
     background-position: center;
   }
-
   .hero-content {
     background-color: rgba(255, 255, 255, 0.94);
     color: #222;
@@ -505,9 +494,7 @@ text-decoration: none;
   .category-count {
     font-size: 12px;
   }
-}
 
-@media (max-width: 767px) {
   .promo-title {
     font-size: 24px;
   }
@@ -515,5 +502,13 @@ text-decoration: none;
   .promo-img {
     width: 150px;
     height: 150px;
+  } 
+   .sh-inner {
+    flex-direction: column;
+  }
+
+  .sh-image {
+    max-width: 350px;
   }
 }
+

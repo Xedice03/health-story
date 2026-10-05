@@ -10,11 +10,11 @@ body {
 
 /* header */
 
-.top-header {
+/* .top-header {
   background-color:rgba(134, 210, 24, 1);
   color: white;
   font-size: 12px;
-  padding: 5px 0; ;
+  padding: 5px 0; 
 }
 .top-header ul{
   list-style:none;
@@ -25,7 +25,7 @@ body {
 .top-link {
   color: white;
   text-decoration: none;
-}
+}*/
 
 .header-icons {
   display: flex;
@@ -34,7 +34,7 @@ body {
   gap: 22px;
   color: white;
   font-size: 20px;
-}
+} 
 
 /* home */
 .main-header {
@@ -97,9 +97,7 @@ body {
 }
 .Welcome{ font-size: 11px; font-weight: 400;color:rgba(134, 210, 24, 1);} 
 .name{ font-size: 13px; font-weight: 600;}
-/* =========================
-   SEARCH
-========================= */
+/*SEARCH */
 
 .search-box {
   display: flex;
@@ -122,14 +120,10 @@ body {
   color: white;
 }
 
-/* =========================
-   HEADER ICONS
-========================= */
+/* HEADER ICONS*/
 
 
-/* =========================
-   NAVIGATION
-========================= */
+/* NAV*/
 
 .navigation {
   background-color: white;
@@ -147,11 +141,71 @@ body {
   font-size: 11px;
   font-weight: 500;
 }
-.responsive-menu{
-  flex-direction: column;
-    gap: 10px;  
-    display: flex;
-    color: #222;
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+.responsive-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 75%;
+  height: 100vh;
+  background: white;
+  z-index: 20;
+  padding: 20px;
+}
+
+.responsive-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-logo img {
+  width: 45px;
+}
+
+.menu-logo h5,
+.menu-logo h6 {
+  margin: 0;
+}
+
+.responsive-menu-header button {
+  border: 0;
+  background: none;
+  font-size: 30px;
+}
+
+.menu-section {
+  margin-top: 25px;
+}
+
+.menu-section p {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.menu-section a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.helps span {
+  display: block;
+  margin: 15px 0;
+  color: #777;
 }
 @media (max-width: 768px) {
   .top-header {
@@ -174,7 +228,7 @@ body {
   .search-box {
     margin-top: 5px;
   }
-.nav-links a:hover {
+/* .nav-links a:hover {
   color: #5baa00;
-}
+} */
 }
